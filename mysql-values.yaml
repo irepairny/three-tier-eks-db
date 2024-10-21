@@ -1,0 +1,13 @@
+auth:
+  rootPassword: "hello123"
+  createDatabase: true
+  database: "twotier"
+  username: "twotieruser"
+  password: "secretpass"
+primary:
+  persistence:
+    enabled: true
+    storageClass: "ebs-sc"
+    accessModes:
+      - ReadWriteOnce
+    size: 20Gi
